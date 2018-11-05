@@ -24,7 +24,7 @@ public interface MySQLConfiguration extends Configuration {
 
     // The defaults are currently in line with the HikariConfig defaults, which are unfortunately private.
     String CONNECTION_POOL_MAX_SIZE_PROPERTY_NAME = "conductor.mysql.connection.pool.size.max";
-    int CONNECTION_POOL_MAX_SIZE_DEFAULT_VALUE = -1;
+    int CONNECTION_POOL_MAX_SIZE_DEFAULT_VALUE = 10;
 
     String CONNECTION_POOL_MINIMUM_IDLE_PROPERTY_NAME = "conductor.mysql.connection.pool.idle.min";
     int CONNECTION_POOL_MINIMUM_IDLE_DEFAULT_VALUE = -1;
