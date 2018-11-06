@@ -27,7 +27,7 @@ public interface MySQLConfiguration extends Configuration {
     int CONNECTION_POOL_MAX_SIZE_DEFAULT_VALUE = 10;
 
     String CONNECTION_POOL_MINIMUM_IDLE_PROPERTY_NAME = "conductor.mysql.connection.pool.idle.min";
-    int CONNECTION_POOL_MINIMUM_IDLE_DEFAULT_VALUE = -1;
+    int CONNECTION_POOL_MINIMUM_IDLE_DEFAULT_VALUE = 5;
 
     String CONNECTION_MAX_LIFETIME_PROPERTY_NAME = "conductor.mysql.connection.lifetime.max";
     long CONNECTION_MAX_LIFETIME_DEFAULT_VALUE = TimeUnit.MINUTES.toMillis(30);
